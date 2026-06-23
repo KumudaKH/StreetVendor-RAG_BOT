@@ -1,0 +1,41 @@
+Terminal 1 — Install Ollama model (only once)
+ollama pull llama3.2
+
+Check:
+
+ollama list
+
+Terminal 2 — Start Ollama
+ollama serve
+
+Terminal 3 — Start Backend
+
+Activate virtual environment:
+
+.venv\Scripts\activate
+
+Go to backend:
+
+cd backend
+
+Run:
+
+uvicorn app:app --reload
+
+Terminal 4 — Start Frontend
+
+Go to frontend:
+
+cd vendor-ai
+
+npm start
+
+_________________________
+
+ollama serve
+
+cd backend
+uvicorn app:app --reload
+
+cd frontend
+npm start
